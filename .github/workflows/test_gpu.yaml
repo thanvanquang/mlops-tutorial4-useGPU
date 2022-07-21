@@ -10,7 +10,7 @@ jobs:
           REPO_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           CODEBLOCK="\'\'\'"
-          echo $CODEBLOCK >> report.md
+          echo $CODEBLOCK > report.md
           nvidia-smi >> report.md
           echo $CODEBLOCK >> report.md
           cml-send-comment report.md
