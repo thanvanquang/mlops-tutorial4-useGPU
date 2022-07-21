@@ -7,7 +7,7 @@ jobs:
       - uses: actions/checkout@v2
       - name: cml_run
         env:
-          REPO_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          repo_token: ${{ secrets.GITHUB_TOKEN }}
         run: |
           CODEBLOCK="\'\'\'"
           echo $CODEBLOCK > report.md
